@@ -21,6 +21,12 @@ namespace lab2
             receptorAdapter.informInEnglish();
             receptorAdapter.registerInEnglish();
 
+            Console.WriteLine("\n**************\n");
+            Bridge.Patient patient1 = new Bridge.PatientWithPolicy(new Bridge.FreePolicy());
+            patient1.create();
+            Bridge.Patient patient2 = new Bridge.PatientWithoutPolicy(new Bridge.PurchasedPolicy());
+            patient2.create();
+
             Console.ReadKey();
         }
     }

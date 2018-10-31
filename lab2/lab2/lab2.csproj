@@ -44,11 +44,15 @@
     <Compile Include="Adapter\ReceptionAdapter.cs" />
     <Compile Include="Adapter\Reception.cs" />
     <Compile Include="Adapter\ReceptionAdapterImp.cs" />
+    <Compile Include="Bridge\FreePolicy.cs" />
+    <Compile Include="Bridge\Patient.cs" />
+    <Compile Include="Bridge\PatientWithoutPolicy.cs" />
+    <Compile Include="Bridge\PatientWithPolicy.cs" />
+    <Compile Include="Bridge\Policy.cs" />
+    <Compile Include="Bridge\PurchasedPolicy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bridge\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
