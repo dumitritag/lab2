@@ -55,6 +55,10 @@
     <Compile Include="Decorator\DoctorImp.cs" />
     <Compile Include="Decorator\Surgery.cs" />
     <Compile Include="Decorator\Treatment.cs" />
+    <Compile Include="Facade\Department.cs" />
+    <Compile Include="Facade\Ginecology.cs" />
+    <Compile Include="Facade\Hospital.cs" />
+    <Compile Include="Facade\Therapy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

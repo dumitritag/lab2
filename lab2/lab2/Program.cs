@@ -9,6 +9,10 @@ namespace lab2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("****Hospital****\n");
+            Facade.Hospital hospital = new Facade.Hospital();
+            hospital.visitTherapy();
+
             Adapter.Reception receptor = new Adapter.Reception();
             Adapter.ReceptionAdapterImp receptorAdapter = new Adapter.ReceptionAdapterImp(receptor);
 
