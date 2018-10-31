@@ -5,7 +5,8 @@ using System.Text;
 
 namespace lab2.Decorator
 {
-    interface Doctor
+    public interface Doctor
     {
+        String investigate();
     }
 }

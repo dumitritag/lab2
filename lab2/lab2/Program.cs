@@ -27,6 +27,11 @@ namespace lab2
             Bridge.Patient patient2 = new Bridge.PatientWithoutPolicy(new Bridge.PurchasedPolicy());
             patient2.create();
 
+            Console.WriteLine("\n**************\n");
+            Decorator.Doctor doctor = new Decorator.Treatment(new Decorator.Surgery(new Decorator.DoctorImp()));
+            Console.WriteLine(doctor.investigate());
+
+
             Console.ReadKey();
         }
     }

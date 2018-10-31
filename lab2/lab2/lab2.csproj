@@ -50,6 +50,11 @@
     <Compile Include="Bridge\PatientWithPolicy.cs" />
     <Compile Include="Bridge\Policy.cs" />
     <Compile Include="Bridge\PurchasedPolicy.cs" />
+    <Compile Include="Decorator\Doctor.cs" />
+    <Compile Include="Decorator\DoctorDecorator.cs" />
+    <Compile Include="Decorator\DoctorImp.cs" />
+    <Compile Include="Decorator\Surgery.cs" />
+    <Compile Include="Decorator\Treatment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

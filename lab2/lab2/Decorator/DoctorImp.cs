@@ -5,7 +5,11 @@ using System.Text;
 
 namespace lab2.Decorator
 {
-    class DoctorImp
+    public class DoctorImp : Doctor
     {
+        public String investigate()
+        {
+            return "Totul este bine.";
+        }
     }
 }
