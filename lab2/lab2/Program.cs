@@ -35,6 +35,28 @@ namespace lab2
             Decorator.Doctor doctor = new Decorator.Treatment(new Decorator.Surgery(new Decorator.DoctorImp()));
             Console.WriteLine(doctor.investigate());
 
+            Console.WriteLine("\n**************\n");
+            /* for (int i = 0; i< 30; i++) {
+            Flyweight.Disease disease = (Flyweight.Disease)Flyweight.DiseaseFactory.getTreatment("Pneumonie");
+            disease.setState("Acuta");
+            disease.write();
+             }*/
+
+            Flyweight.DiseaseFactory factory = new Flyweight.DiseaseFactory();
+
+            Flyweight.Target disease1 = new Flyweight.Target();
+            disease1.ID = Guid.NewGuid();
+            disease1.DiseaseData = factory.getTreatment("Gripa");
+
+            Flyweight.Target disease2 = new Flyweight.Target();
+            disease2.ID = Guid.NewGuid();
+            disease2.DiseaseData = factory.getTreatment("Gripa");
+
+            bool result = disease1.DiseaseData == disease2.DiseaseData;     // result = true
+            Console.WriteLine("Sunt identice obiectele: " + result);
+            string state = disease1.DiseaseData.state;
+
+            Console.WriteLine("Instante Desease: " + Flyweight.Treatment.NumberOfInstances);
 
             Console.ReadKey();
         }

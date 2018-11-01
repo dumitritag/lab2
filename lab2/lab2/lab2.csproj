@@ -59,6 +59,10 @@
     <Compile Include="Facade\Ginecology.cs" />
     <Compile Include="Facade\Hospital.cs" />
     <Compile Include="Facade\Therapy.cs" />
+    <Compile Include="Flyweight\Treatment.cs" />
+    <Compile Include="Flyweight\DiseaseFactory.cs" />
+    <Compile Include="Flyweight\Target.cs" />
+    <Compile Include="Flyweight\Disease.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
