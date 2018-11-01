@@ -36,11 +36,6 @@ namespace lab2
             Console.WriteLine(doctor.investigate());
 
             Console.WriteLine("\n**************\n");
-            /* for (int i = 0; i< 30; i++) {
-            Flyweight.Disease disease = (Flyweight.Disease)Flyweight.DiseaseFactory.getTreatment("Pneumonie");
-            disease.setState("Acuta");
-            disease.write();
-             }*/
 
             Flyweight.DiseaseFactory factory = new Flyweight.DiseaseFactory();
 

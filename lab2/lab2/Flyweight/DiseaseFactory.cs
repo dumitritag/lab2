@@ -11,18 +11,7 @@ namespace lab2.Flyweight
 
         public  Disease getTreatment(String type)
         {
-            //Disease disease = (Disease)treatmentDictionary[name];
-
-           /* if (disease == null)
-            {
-                disease = new Disease(name);
-                treatmentDictionary[name]=disease;
-                Console.WriteLine("Crearea bolii " + name);
-            }*/
-
-            //return disease;
-
-      
+            
                 if (treatmentDictionary.ContainsKey(type))
                 {
                     return treatmentDictionary[type];
